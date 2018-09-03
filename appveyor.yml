@@ -6,7 +6,7 @@ environment:
     # Note: 'default' toolchain is the same as 'vs-14-2015'
 
     - TOOLCHAIN: "msys"
-      PROJECT_DIR: examples\opentracing-cpp
+      PROJECT_DIR: examples\yaml-cpp
 
 install:
   # Python 3
