@@ -1,7 +1,7 @@
 # OSX/Linux (https://github.com/travis-ci-tester/toolchain-table)
 
 language:
-  - minimal
+  - cpp
 
 os:
   - linux
@@ -24,6 +24,16 @@ dist:
 
 env:
   - TOOLCHAIN=generate-documentation-test
+
+matrix:
+  include:
+    # Linux {
+
+    - os: linux
+      env: >
+        TOOLCHAIN=clang-cxx17
+        PROJECT_DIR=examples/opentracing-cpp
+    # }
 
 install:
   # Info about OS
